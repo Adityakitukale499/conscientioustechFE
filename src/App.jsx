@@ -1,9 +1,14 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
 import Login from './components/Login'
 import SignUp from './components/SignUp'
 import EmployeeList from './components/EmployeeList'
+import { useEffect } from 'react'
 
 const App = () => {
+  const navigate = useNavigate()
+  useEffect(()=>{
+    navigate('/login')
+  },[])
   return (
     <BrowserRouter>
     <Routes>
