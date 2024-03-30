@@ -9,7 +9,7 @@
 ```
 ### 3. Start React app 
 ```bash
-npm start
+npm run dev
 ```
 
 
